@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="/Users/alecpetersen/College/learning-vue/lab3/create-project3/src/assets/logo.jpg" width=100px>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/browse">Browse</router-link> | 

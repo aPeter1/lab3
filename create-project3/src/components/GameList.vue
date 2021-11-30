@@ -4,9 +4,9 @@
       <div class="game" v-for="game in games" :key="game.id">
         <div class="info">
           <h1>
-            {{ game.format }} game <i>({{ game.date }})</i>
+            {{ game.format }} game <i>({{ game.moves }} moves)</i>
           </h1>
-          <p>{{ game.moves }} moves</p>
+          <p>{{game.date}}</p>
         </div>
         <div class="game-info">
           <h3>
@@ -19,10 +19,11 @@
             <img :src="'/images/' + game.image" />
           </div>
           <div class="game-info">
-            <h1>
-              {{ "SassyWormhole" }} <i>({{ game.rating }})</i>
-            </h1>
             <p>Accuracy was {{ game.accuracy }}</p>
+            <h3>
+              {{ "SassyWormhole" }} <i>({{ game.rating }})</i>
+            </h3>
+            
           </div>
         </section>
         

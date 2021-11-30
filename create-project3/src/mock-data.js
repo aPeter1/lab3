@@ -29,7 +29,7 @@ let mock = [{
   {
     id: 3,
     rating: 1117,
-    color: "White",
+    color: "Black",
     outcome: "Won",
     opponent: "davidence",
     opponentRating: 1102,
@@ -71,7 +71,7 @@ let mock = [{
   {
     id: 6,
     rating: 1106,
-    color: "White",
+    color: "Black",
     outcome: "Won",
     opponent: "srz12345",
     opponentRating: 1030,
@@ -113,7 +113,7 @@ let mock = [{
   {
     id: 9,
     rating: 1080,
-    color: "White",
+    color: "Black",
     outcome: "Won",
     opponent: "Kingofthecastle133",
     opponentRating: 743,
@@ -127,7 +127,7 @@ let mock = [{
   {
     id: 10,
     rating: 1079,
-    color: "White",
+    color: "Black",
     outcome: "Won",
     opponent: "robbiemagic",
     opponentRating: 1034,
@@ -155,7 +155,7 @@ let mock = [{
   {
     id: 12,
     rating: 1028,
-    color: "White",
+    color: "Black",
     outcome: "Won",
     opponent: "alesmartin9",
     opponentRating: 1019,
