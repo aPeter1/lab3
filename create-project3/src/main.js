@@ -4,7 +4,18 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+function compare( a, b ) {
+  if ( a.date < b.date ){
+    return 1;
+  }
+  if ( a.date > b.date ){
+    return -1;
+  }
+  return 0;
+}
+
 import mock from './mock-data.js'
+mock.sort(compare);
 
 let data = {
   games: mock,
