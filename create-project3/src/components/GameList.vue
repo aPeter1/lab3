@@ -3,12 +3,30 @@
     <div class="games">
       <div class="game" v-for="game in games" :key="game.id">
         <div class="info">
-          <h1>{{ game.opponent }}</h1>
-          <p>{{ game.accuracy }}</p>
+          <h1>
+            {{ game.format }} game <i>({{ game.date }})</i>
+          </h1>
+          <p>{{ game.moves }} moves</p>
         </div>
-        <div class="image">
-          <img :src="'/images/' + game.image" />
+        <div class="game-info">
+          <h3>
+            {{ game.opponent }} <i>({{ game.opponentRating }})</i>
+          </h3>
+          <p>Accuracy was {{ game.opponentAccuracy }}</p>
         </div>
+        <section>
+          <div class="image">
+            <img :src="'/images/' + game.image" />
+          </div>
+          <div class="game-info">
+            <h1>
+              {{ "SassyWormhole" }} <i>({{ game.rating }})</i>
+            </h1>
+            <p>Accuracy was {{ game.accuracy }}</p>
+          </div>
+        </section>
+        
+
         <!-- <div class="">
           <h2>{{ product.price }}</h2>
           <button class="auto" @click="addToCart(product)">
@@ -23,15 +41,15 @@
 
 <script>
 export default {
-  name: "ProductList",
+  name: "GameList",
   props: {
-    products: Array,
+    games: Array,
   },
-  methods: {
-    addToCart(product) {
-      this.$root.$data.cart.push(product)
-    },
-  },
+  // methods: {
+  //   addToCart(product) {
+  //     this.$root.$data.cart.push(product)
+  //   },
+  // },
 };
 </script>
 
@@ -43,34 +61,35 @@ export default {
   justify-content: center;
 }
 
-.products {
+.games {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.product {
+.game {
   margin: 10px;
   margin-top: 50px;
-  width: 200px;
+  width: 250px;
 }
 
-.product img {
+.game img {
   border: 2px solid #333;
   height: 250px;
-  width: 200px;
-  object-fit: cover;
+  width: 250px;
+  /* object-fit: cover; */
 }
 
-.product .image {
+.game .image {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .info {
-  background: #f2921d;
+  background: #9ae291da;
   color: #000;
   padding: 10px 30px;
   height: 80px;

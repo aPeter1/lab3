@@ -1,8 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-let mock = [
-  {
+let mock = [{
     id: 1,
     rating: 1087,
+    color: "White",
+    outcome: "Won",
     opponent: "jcesar59",
     opponentRating: 1090,
     opponentAccuracy: 61.7,
@@ -15,6 +15,8 @@ let mock = [
   {
     id: 2,
     rating: 1068,
+    color: "White",
+    outcome: "Won",
     opponent: "manulopez912",
     opponentRating: 925,
     opponentAccuracy: 30.1,
@@ -25,8 +27,10 @@ let mock = [
     image: "2.png",
   },
   {
-    id: 1,
+    id: 3,
     rating: 1117,
+    color: "White",
+    outcome: "Won",
     opponent: "davidence",
     opponentRating: 1102,
     opponentAccuracy: 68.7,
@@ -39,6 +43,8 @@ let mock = [
   {
     id: 4,
     rating: 1118,
+    color: "White",
+    outcome: "Won",
     opponent: "adityabhopale95",
     opponentRating: 1144,
     opponentAccuracy: 62.9,
@@ -51,6 +57,8 @@ let mock = [
   {
     id: 5,
     rating: 1099,
+    color: "White",
+    outcome: "Won",
     opponent: "srz12345",
     opponentRating: 1037,
     opponentAccuracy: 31.9,
@@ -63,6 +71,8 @@ let mock = [
   {
     id: 6,
     rating: 1106,
+    color: "White",
+    outcome: "Won",
     opponent: "srz12345",
     opponentRating: 1030,
     opponentAccuracy: 65.5,
@@ -75,6 +85,8 @@ let mock = [
   {
     id: 7,
     rating: 1115,
+    color: "White",
+    outcome: "Won",
     opponent: "for1o2",
     opponentRating: 1125,
     opponentAccuracy: 55.6,
@@ -87,6 +99,8 @@ let mock = [
   {
     id: 8,
     rating: 1087,
+    color: "White",
+    outcome: "Won",
     opponent: "djmelik",
     opponentRating: 1023,
     opponentAccuracy: 63.8,
@@ -99,6 +113,8 @@ let mock = [
   {
     id: 9,
     rating: 1080,
+    color: "White",
+    outcome: "Won",
     opponent: "Kingofthecastle133",
     opponentRating: 743,
     opponentAccuracy: 78.7,
@@ -111,6 +127,8 @@ let mock = [
   {
     id: 10,
     rating: 1079,
+    color: "White",
+    outcome: "Won",
     opponent: "robbiemagic",
     opponentRating: 1034,
     opponentAccuracy: 62.1,
@@ -123,6 +141,8 @@ let mock = [
   {
     id: 11,
     rating: 1033,
+    color: "White",
+    outcome: "Won",
     opponent: "rommelsilvestre",
     opponentRating: 1030,
     opponentAccuracy: 48.1,
@@ -135,6 +155,8 @@ let mock = [
   {
     id: 12,
     rating: 1028,
+    color: "White",
+    outcome: "Won",
     opponent: "alesmartin9",
     opponentRating: 1019,
     opponentAccuracy: 71.0,
@@ -145,3 +167,5 @@ let mock = [
     image: "12.png",
   },
 ]
+
+export default mock;
